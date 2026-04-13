@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2893f42783c0cb10ad5c9796feaad3b8</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Calculate media average rating</sys_name>
         <sys_overrides/>
         <sys_package display_value="Nowflix" source="x_1921407_nowflix">bc71d55e838c4310ad5c9796feaad309</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Nowflix">bc71d55e838c4310ad5c9796feaad309</sys_scope>
         <sys_update_name>sys_hub_flow_2893f42783c0cb10ad5c9796feaad3b8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-10 16:13:16</sys_updated_on>
+        <sys_updated_on>2026-04-10 20:17:44</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
@@ -383,11 +383,11 @@
         <sys_created_on>2026-04-10 14:21:21</sys_created_on>
         <sys_id>b2497c238304cb10ad5c9796feaad314</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Media</sys_name>
         <sys_package display_value="Nowflix" source="x_1921407_nowflix">bc71d55e838c4310ad5c9796feaad309</sys_package>
         <sys_policy/>
         <sys_scope display_value="Nowflix">bc71d55e838c4310ad5c9796feaad309</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_2893f42783c0cb10ad5c9796feaad3b8_media_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-10 14:21:21</sys_updated_on>
         <url/>
@@ -772,11 +772,11 @@
         <sys_created_on>2026-04-10 14:21:21</sys_created_on>
         <sys_id>43497c238304cb10ad5c9796feaad3b2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Media</sys_name>
         <sys_package display_value="Nowflix" source="x_1921407_nowflix">bc71d55e838c4310ad5c9796feaad309</sys_package>
         <sys_policy/>
         <sys_scope display_value="Nowflix">bc71d55e838c4310ad5c9796feaad309</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_43497c238304cb10ad5c9796feaad384_media_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-10 14:21:21</sys_updated_on>
         <url/>
@@ -794,7 +794,7 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"0b497c238304cb10ad5c9796feaad3e8","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Calculate media average rating">2893f42783c0cb10ad5c9796feaad3b8</plan_id>
-        <snapshot>f5635de383c4cb10ad5c9796feaad3e2</snapshot>
+        <snapshot>80a11ca4c3d003104a9d563ed40131c2</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-10 14:21:22</sys_created_on>
         <sys_domain>global</sys_domain>
