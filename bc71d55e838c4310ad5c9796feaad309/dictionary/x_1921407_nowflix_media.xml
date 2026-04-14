@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="a4326dea838cc310ad5c9796feaad398" label="Media" max_length="40" name="x_1921407_nowflix_media" type="collection">
-        <element choice="1" default="1" label="Intergration state" max_length="40" name="intergration_state" type="choice">
+        <element choice="1" default="1" label="Integration state" max_length="40" name="intergration_state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Media not Found" sequence="500" value="7"/>
-                <element inactive_on_update="false" label="Integration Failure" sequence="400" value="4"/>
-                <element inactive_on_update="false" label="Integration Success" sequence="300" value="3"/>
-                <element inactive_on_update="false" label="Integrating" sequence="200" value="2"/>
-                <element inactive_on_update="false" label="Starting" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Media not Found" sequence="4" value="7"/>
+                <element inactive_on_update="false" label="Integration Failure" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Integration Success" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Integrating" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Starting" sequence="0" value="1"/>
             </choice>
         </element>
         <element label="Poster" max_length="1024" name="poster" type="url"/>
@@ -19,6 +19,7 @@
         <element label="Category" max_length="40" name="category" type="string"/>
         <element label="Country" max_length="250" name="country" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="0" label="Metascore" max_length="40" name="metascore" type="integer"/>
+        <element label="Integration Error Message" max_length="1000" name="integration_error_message" type="string"/>
         <element label="Synopsis" max_length="4000" name="synopsis" type="string"/>
         <element display="true" label="Title" max_length="250" name="title" type="string"/>
         <element label="Release Year" max_length="4" name="release_year" type="string"/>
@@ -31,7 +32,7 @@
                 <element inactive_on_update="false" label="Movie" sequence="1" value="movie"/>
             </choice>
         </element>
-        <element choice="1" label="State" max_length="40" name="state" type="choice">
+        <element choice="1" default="1" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Draft" sequence="100" value="1"/>
                 <element inactive_on_update="false" label="Completed" sequence="200" value="3"/>
