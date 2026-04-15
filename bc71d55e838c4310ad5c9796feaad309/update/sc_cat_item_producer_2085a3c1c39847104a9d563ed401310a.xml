@@ -7,7 +7,7 @@
         <billable>false</billable>
         <can_cancel>false</can_cancel>
         <category display_value="Nowflix">061f033a83888710ad5c9796feaad3c8</category>
-        <checked_out>false</checked_out>
+        <checked_out/>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
@@ -26,12 +26,12 @@
         <location/>
         <make_item_non_conversational>false</make_item_non_conversational>
         <mandatory_attachment>false</mandatory_attachment>
-        <meta>movie, imdb, review, episode, blablabla, filme</meta>
+        <meta/>
         <mobile_hide_price>false</mobile_hide_price>
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Media Review</name>
+        <name>Media Suggestion</name>
         <no_attachment_v2>true</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -48,14 +48,14 @@
         <order>0</order>
         <ordered_item_link/>
         <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
-        <picture>7dd0e34f83880b10ad5c9796feaad360</picture>
+        <picture/>
         <post_insert_script><![CDATA[/**
 * This script is executed after the record is generated. 
 * `current` Is the GlideRecord produced by Record Producer. Use `current.update()` to update the record
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></post_insert_script>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=8bd0137a83888710ad5c9796feaad316&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=2085a3c1c39847104a9d563ed401310a&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
@@ -81,52 +81,52 @@
 * Avoid `current.setAbortAction()` and generate a separate record
 * Use `producer.var1` to access variables
 */]]></script>
-        <short_description>Here you can review your favorite (and least favorite) movies and series</short_description>
+        <short_description>Here you can suggest your favorite (and least favorite) movies and series. If approved, the movie/series you choose will be integrated into our system.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
-        <state>published</state>
+        <state/>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-08 17:38:53</sys_created_on>
-        <sys_id>8bd0137a83888710ad5c9796feaad316</sys_id>
-        <sys_mod_count>53</sys_mod_count>
-        <sys_name>Media Review</sys_name>
+        <sys_created_on>2026-04-15 18:48:19</sys_created_on>
+        <sys_id>2085a3c1c39847104a9d563ed401310a</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Media Suggestion</sys_name>
         <sys_package display_value="Nowflix" source="x_1921407_nowflix">bc71d55e838c4310ad5c9796feaad309</sys_package>
         <sys_policy/>
         <sys_scope display_value="Nowflix">bc71d55e838c4310ad5c9796feaad309</sys_scope>
-        <sys_update_name>sc_cat_item_producer_8bd0137a83888710ad5c9796feaad316</sys_update_name>
+        <sys_update_name>sc_cat_item_producer_2085a3c1c39847104a9d563ed401310a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-15 18:48:11</sys_updated_on>
-        <table_name>x_1921407_nowflix_review</table_name>
-        <taxonomy_topic display_value="Hardware">782413a7c3053010069aec4b7d40ddf1</taxonomy_topic>
+        <sys_updated_on>2026-04-15 19:36:42</sys_updated_on>
+        <table_name>x_1921407_nowflix_suggestion</table_name>
+        <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>54</version>
+        <version>21</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
         <workflow/>
     </sc_cat_item_producer>
-    <sys_translated_text action="delete_multiple" query="documentkey=8bd0137a83888710ad5c9796feaad316"/>
-    <fx_price action="delete_multiple" query="id=8bd0137a83888710ad5c9796feaad316"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2085a3c1c39847104a9d563ed401310a"/>
+    <fx_price action="delete_multiple" query="id=2085a3c1c39847104a9d563ed401310a"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
-        <currency display_value="USD">USD</currency>
+        <currency display_value="BRL">BRL</currency>
         <field>price</field>
-        <id>8bd0137a83888710ad5c9796feaad316</id>
+        <id>2085a3c1c39847104a9d563ed401310a</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-08 17:38:53</sys_created_on>
-        <sys_id>b853133283c88710ad5c9796feaad363</sys_id>
+        <sys_created_on>2026-04-15 18:48:19</sys_created_on>
+        <sys_id>ca566745c39847104a9d563ed4013178</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-08 17:38:53</sys_updated_on>
+        <sys_updated_on>2026-04-15 18:48:19</sys_updated_on>
         <table>sc_cat_item_producer</table>
         <type>calculated</type>
     </fx_price>

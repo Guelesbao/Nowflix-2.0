@@ -2,6 +2,12 @@
     <element db_object_id="3f948aae83800710ad5c9796feaad396" extends="task" label="Suggestion" max_length="40" name="x_1921407_nowflix_suggestion" type="collection">
         <element label="Reproval Reason" max_length="4000" name="reproval_reason" type="string"/>
         <element label="Release Year" max_length="4" name="release_year" type="string"/>
+        <element choice="3" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Movies" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Series" sequence="2" value="2"/>
+            </choice>
+        </element>
         <element label="Title" max_length="250" name="title" type="string"/>
     </element>
 </database>

@@ -6,7 +6,7 @@
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Nowflix" name="Nowflix">8ec6f9a3c3cc8b104a9d563ed4013139</category>
-        <collection>x_1921407_nowflix_review</collection>
+        <collection>x_1921407_nowflix_suggestion</collection>
         <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
@@ -36,14 +36,15 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Hello ${opened_by.first_name}</p>
-<p>Thank you for your review for the ${media.type} ${media.title}.</p>
+        <message_html><![CDATA[<p>Hello ${opened_by.first_name},</p>
+<p>Thank you very much for the suggestion of the ${type} - '${title}'.</p>
+<p>But for the following Reason:</p>
+<p>${reproval_reason}.</p>
 <p>It is <strong>Reproved.</strong></p>
-<p><img style="width: 300px;" src="${media.poster}"></p>
-<p>If you want to send more reviews, click <a href="/sp?id=sc_cat_item&amp;sys_id=8bd0137a83888710ad5c9796feaad316">here</a></p>]]></message_html>
+<p>If you want to send more suggestions, click&nbsp;<a href="/sp?id=sc_cat_item&amp;sys_id=2085a3c1c39847104a9d563ed401310a">here</a></p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Review Reproved</name>
+        <name>Suggestion Reproved</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -54,23 +55,23 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>${number} - ${media.title} Review Reproved</subject>
+        <subject>${number} - ${title} Suggestion Reproved</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-10 19:19:31</sys_created_on>
+        <sys_created_on>2026-04-15 20:30:35</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>2a8d79a7830ccb10ad5c9796feaad308</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Review Reproved</sys_name>
+        <sys_id>98cd7fc1c35c47104a9d563ed401317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Suggestion Reproved</sys_name>
         <sys_overrides/>
         <sys_package display_value="Nowflix" source="x_1921407_nowflix">bc71d55e838c4310ad5c9796feaad309</sys_package>
         <sys_policy/>
         <sys_scope display_value="Nowflix">bc71d55e838c4310ad5c9796feaad309</sys_scope>
-        <sys_update_name>sysevent_email_action_2a8d79a7830ccb10ad5c9796feaad308</sys_update_name>
+        <sys_update_name>sysevent_email_action_98cd7fc1c35c47104a9d563ed401317f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-15 20:16:27</sys_updated_on>
+        <sys_updated_on>2026-04-15 20:30:35</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
