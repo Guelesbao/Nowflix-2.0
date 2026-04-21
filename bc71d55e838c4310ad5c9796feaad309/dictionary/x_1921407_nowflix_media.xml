@@ -36,6 +36,7 @@
             <choice>
                 <element inactive_on_update="false" label="Draft" sequence="100" value="1"/>
                 <element inactive_on_update="false" label="Completed" sequence="200" value="3"/>
+                <element inactive_on_update="false" label="Duplicate" sequence="300" value="7"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" default="0" label="IMDB Rating" max_length="40" name="imdb_rating" type="float"/>
