@@ -33,7 +33,6 @@
         <script><![CDATA[current.setValue("state", "3");
 current.update();
 gs.addInfoMessage("Integração concluída com sucesso!.");
-action.setRedirectURL(current);
 
 var grMedia = new GlideRecord('x_1921407_nowflix_media');
 grMedia.addQuery('title'.toString(), current.title.toString());
@@ -63,6 +62,7 @@ while (grMedia.next()) {
 		}
 	})();
 }
+action.setRedirectURL(current);
 
 // while (grMedia.next()) {
 // 	var elements = grMedia.getElements();
@@ -75,12 +75,13 @@ while (grMedia.next()) {
 // 		}
 // 	}
 // 	grMedia.setValue('state', '7');
+// 	grMedia.setValue('intergration_state', '3');
 // 	grMedia.update();
 // }
 
 // while(grMedia.next()) {
 // 	grMedia.setValue('state', '7');
-// 	grMedia.setValue('intergration_state', '');
+// 	grMedia.setValue('intergration_state', '3');
 // 	grMedia.setValue('integration_error_message', '');
 // 	grMedia.setValue('genre', '');
 // 	grMedia.setValue('category', '');
@@ -94,6 +95,17 @@ while (grMedia.next()) {
 // 	grMedia.setValue('awards', '');
 // 	grMedia.setValue('language', '');
 // 	grMedia.setValue('country', '');
+
+// 	var grMediaActor = new GlideRecord("x_1921407_nowflix_m2m_media_actor");
+//     grMediaActor.addEncodedQuery("x_1921407_nowflix_media=" + grMedia.getValue("sys_id"));
+//     grMediaActor.query();
+//     grMediaActor.deleteMultiple();
+ 
+//     var grMediaDirector = new GlideRecord("x_1921407_nowflix_m2m_media_director");
+//     grMediaDirector.addEncodedQuery("x_1921407_nowflix_media=" + grMedia.getValue("sys_id"));
+//     grMediaDirector.query();
+//     grMediaDirector.deleteMultiple();
+
 // 	grMedia.update();
 // }]]></script>
         <show_insert>false</show_insert>
@@ -106,7 +118,7 @@ while (grMedia.next()) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>697c0021c3d403104a9d563ed40131dc</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name>Complete</sys_name>
         <sys_overrides/>
         <sys_package display_value="Nowflix" source="x_1921407_nowflix">bc71d55e838c4310ad5c9796feaad309</sys_package>
@@ -114,7 +126,7 @@ while (grMedia.next()) {
         <sys_scope display_value="Nowflix">bc71d55e838c4310ad5c9796feaad309</sys_scope>
         <sys_update_name>sys_ui_action_697c0021c3d403104a9d563ed40131dc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-21 03:27:01</sys_updated_on>
+        <sys_updated_on>2026-04-22 13:27:00</sys_updated_on>
         <table>x_1921407_nowflix_media</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

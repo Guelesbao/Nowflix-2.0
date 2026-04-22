@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1921407_nowflix.NowflixUtilsv2</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>NowflixUtilsv2</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var NowflixUtilsv2 = Class.create();
+NowflixUtilsv2.prototype = {
+	initialize: function () { },
+	refQualMedia: function () {
+
+		var moviesNotToBeShown = [];
+		var grReview = new GlideRecord("x_1921407_nowflix_review");
+		grReview.addEncodedQuery('opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state!=4');
+		grReview.query();
+
+		while (grReview.next()) {
+			moviesNotToBeShown.push(grReview.media.sys_id.toString());
+		}
+		var moviesToBeShown = [];
+		var grMedia = new GlideRecord('x_1921407_nowflix_media');
+		grMedia.addQuery('state', '3');
+		grMedia.query();
+
+		while (grMedia.next()) {
+			if (moviesNotToBeShown.indexOf(grMedia.getUniqueValue() == -1)) {
+				moviesToBeShown.push(grMedia.getUniqueValue());
+			}
+		}
+		return 'sys_idIN' + moviesToBeShown.join(',');
+	},
+
+	type: 'NowflixUtilsv2'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 18:30:44</sys_created_on>
+        <sys_id>4175e7dbc39803104a9d563ed40131fa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>NowflixUtilsv2</sys_name>
+        <sys_package display_value="Nowflix" source="x_1921407_nowflix">bc71d55e838c4310ad5c9796feaad309</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Nowflix">bc71d55e838c4310ad5c9796feaad309</sys_scope>
+        <sys_update_name>sys_script_include_4175e7dbc39803104a9d563ed40131fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 18:45:32</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Nowflix">bc71d55e838c4310ad5c9796feaad309</application>
+        <file_path/>
+        <instance_id>71890fc9ffb52e14c80bf8e4fc4fd9a0</instance_id>
+        <instance_name>dev350289</instance_name>
+        <name>sys_script_include_4175e7dbc39803104a9d563ed40131fa</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1921407_nowflix.NowflixUtilsv2&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;NowflixUtilsv2&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var NowflixUtilsv2 = Class.create();
+NowflixUtilsv2.prototype = {
+	initialize: function () { },
+	refQualMedia: function () {
+
+		var moviesNotToBeShown = [];
+		var grReview = new GlideRecord("x_1921407_nowflix_review");
+		grReview.addEncodedQuery('opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state!=4');
+		grReview.query();
+
+		while (grReview.next()) {
+			moviesNotToBeShown.push(grReview.media.sys_id.toString());
+		}
+		var moviesToBeShown = [];
+		var grMedia = new GlideRecord('x_1921407_nowflix_media');
+		grMedia.addQuery('state', '3');
+		grMedia.query();
+
+		while (grMedia.next()) {
+			if (moviesNotToBeShown.indexOf(grMedia.getUniqueValue() == -1)) {
+				moviesToBeShown.push(grMedia.getUniqueValue());
+			}
+		}
+		return 'sys_idIN' + moviesToBeShown.join(',');
+	},
+
+	type: 'NowflixUtilsv2'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-22 18:30:44&lt;/sys_created_on&gt;&lt;sys_id&gt;4175e7dbc39803104a9d563ed40131fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;NowflixUtilsv2&lt;/sys_name&gt;&lt;sys_package display_value="Nowflix" source="x_1921407_nowflix"&gt;bc71d55e838c4310ad5c9796feaad309&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Nowflix"&gt;bc71d55e838c4310ad5c9796feaad309&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_4175e7dbc39803104a9d563ed40131fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-22 18:45:32&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1922328298</payload_hash>
+        <record_name>NowflixUtilsv2</record_name>
+        <reverted_from/>
+        <source>ef78c9b8c3dc43104a9d563ed40131ab</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 18:45:32</sys_created_on>
+        <sys_id>b5d82753c3d803104a9d563ed4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19db68304050000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 18:45:32</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>35d82753b2d803106ee43ee31be77b44</update_guid>
+        <update_guid_history>35d82753b2d803106ee43ee31be77b44:1922328298,60c76f1f639803103655c5a4704bc6b0:-906162199,01752bdb7b98031013cd632df78ce400:2036098307</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 18:46:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>88f6e6d7155548e09cc3d36c7becd724</sys_id>
+        <sys_metadata>4175e7dbc39803104a9d563ed40131fa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NowflixUtilsv2</sys_name>
+        <sys_package display_value="Nowflix" source="x_1921407_nowflix">bc71d55e838c4310ad5c9796feaad309</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Nowflix">bc71d55e838c4310ad5c9796feaad309</sys_scope>
+        <sys_scope_delete display_value="">249d8a012e144e62984aefc85ccff059</sys_scope_delete>
+        <sys_update_name>sys_script_include_4175e7dbc39803104a9d563ed40131fa</sys_update_name>
+        <sys_update_version display_value="sys_script_include_4175e7dbc39803104a9d563ed40131fa">b5d82753c3d803104a9d563ed4013145</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 18:46:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
